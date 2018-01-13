@@ -19,10 +19,12 @@ function iLoveTheBeatles(number){
   var array=[];
   do{
     if (array.length ==0){
-      continue;
+      number++;  
     }
-    array.push("I love the Beatles!");
-    number++;
+    else{
+      array.push("I love the Beatles!");
+      number++;
+    }
   }
   while(number<15);
 }
